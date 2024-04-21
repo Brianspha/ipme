@@ -14,6 +14,7 @@ import {IIPLicensingAttestation} from "../sign/IIPLicensingAttestation.sol";
 import "./IIPHolder.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "../utils/IPHolderData.sol";
+
 contract IPHolder is IIPHolder {
     // Immutable contract addresses and modules used for IP management
     address public immutable NFT;
@@ -177,8 +178,6 @@ contract IPHolder is IIPHolder {
         if (licenseId == 0) {
             revert InvalidTokenId();
         }
-        licensesLeased[leaseDetails.licensorIpId].push(licenseId);
-        userLicenses[msg.sender].push(ipDetails[leaseDetails.licensorIpId]); //@dev not ideal but for now ok ideally we want to query the SP protocol for details
         bytes[] memory reciepients;
         licensingAttestation.attestLicenseOrIP(
             IIPLicensingAttestation.LicenseAttestion({
@@ -189,6 +188,8 @@ contract IPHolder is IIPHolder {
                 recipients: reciepients
             })
         );
+        licensesLeased[leaseDetails.licensorIpId].push(licenseId);
+        userLicenses[msg.sender].push(ipDetails[leaseDetails.licensorIpId]); //@dev not ideal but for now ok ideally we want to query the SP protocol for details
     }
 
     /// @inheritdoc IIPHolder

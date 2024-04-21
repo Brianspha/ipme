@@ -68,6 +68,7 @@ IPME (Intellectual Property Management Ecosystem) is a (DApp) that integrates th
 6. **Payment Processing and Attestation**:
    - Payments are made directly to the ERC-6551 account associated with the IP Asset.
    - The transaction details are attested using the Sign Protocol,using the attestation metadata specified by the creator during minting.
+   - Paying for a license can be made using any ERC20 token specified by the creator
 
 
 
@@ -75,3 +76,8 @@ IPME (Intellectual Property Management Ecosystem) is a (DApp) that integrates th
 ## Conclusion
 
 IPME represents a pioneering approach in the integration of blockchain technology for IP management, attestation, and complex transaction handling through ERC-6551 accounts. This DApp not only simplifies the licensing and management of intellectual property but also enhances security and transparency, ensuring creators can monetize their work efficiently while providing clear, enforceable rights to users.
+
+## Diagrams
+1. ![Create IP](./screenshots/1.png)
+2. ![Purchase IP License](./screenshots/2.png)
+
