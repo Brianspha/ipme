@@ -1,0 +1,32 @@
+[profile.default]
+auto_detect_solc = false
+bytecode_hash = "none"
+cbor_metadata = false
+emv_version = "paris"
+fuzz = { runs = 1_000 }
+libs = ["node_modules", "lib"]
+optimizer = true
+optimizer_runs = 50
+out = "out"
+solc = "0.8.23"
+src = "src"
+test = "test"
+gas_reports = ["*"]
+fs_permissions = [
+    { access = 'read-write', path = './' },
+    { access = 'read-write', path = './deploy-out' },
+    { access = "read", path = "lib/foundry-chainlink-toolkit/out" },
+]
+
+build_info = true
+extra_output = ["storageLayout"]
+[fmt]
+bracket_spacing = true
+int_types = "long"
+line_length = 120
+multiline_func_header = "all"
+number_underscore = "thousands"
+quote_style = "double"
+tab_width = 4
+wrap_comments = true
+

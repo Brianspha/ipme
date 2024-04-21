@@ -1,0 +1,1 @@
+anvil  --port 8545 --fork-url https://sepolia.infura.io/v3/7ad69b009fb44985a5e12eed696a6886 --fork-block-number 5712129  --fork-chain-id 1337  --no-rate-limit --mnemonic  "claw aware right regular security second any useless turkey agent eagle announce"
