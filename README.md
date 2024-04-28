@@ -26,7 +26,7 @@ IPME is a (DApp) that integrates the Story Protocol for managing and licensing i
 
 **Functionality**:
 
-- Each IP Asset NFT is linked to an ERC-6551 account, enabling it to hold and transfer other tokens.
+- Each IP Asset NFT is linked to an <a href=https://www.quicknode.com/guides/ethereum-development/nfts/how-to-create-and-deploy-an-erc-6551-nft>ERC-6551</a> account, enabling it to hold and transfer other tokens.
 - This capability allows each NFT to manage its financial transactions related to licensing fees, royalties, and other related payments.
 
 ## Workflow
