@@ -2,7 +2,7 @@
 
 ## Overview
 
-IPME is a (DApp) that integrates the Story Protocol for managing and licensing intellectual properties with the Sign Protocol for attesting to the authenticity and terms of these transactions. This integration ensures a secure, transparent, and efficient system for IP creators and users.
+IPME is a (DApp) that integrates the Story Protocol for managing and licensing intellectual properties with the Sign Protocol for attesting to the authenticity of the Licensing terms.
 
 
 ## Components
